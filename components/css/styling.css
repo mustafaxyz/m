@@ -1,0 +1,700 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+
+    box-sizing: border-box;
+    
+    font: 'Roboto';
+    color: white;
+}
+
+i {
+    color: orange;
+}
+
+
+.sections {
+    min-width: 100vw;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+.navbar-brand {
+    padding: 2.5%;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: white;
+    font-weight: 600;
+}
+
+.sectionHeading, .navbar-nav, .skillName, .blockquote, .gameCardInfo, .content, .popUpTitle, #aboutDescriptionBody, #projectText, #weatherInfo, #weatherForm, #mailForm {
+    text-align: center;
+}
+
+#aboutContainer, #skillsBody, #gamesContainer, #contactCardsContainer {
+    justify-content: center;
+}
+
+.gameDescription, .skillName:hover,#toggleMobileMenu {
+    font-size: 1.5rem;
+}
+
+.navbar-brand, .btn, .content, .inputFields, #aboutDescription, #weatherInfo{
+    font-size: 2rem;
+}
+
+#toggleMobileMenu {
+    justify-content: end;
+}
+
+.nav-link {
+    margin: 5px;
+
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: 700;
+}
+
+.particlesSection {
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+}
+
+#typed {
+    padding: 10%;
+
+    font-size: 8rem;
+}
+
+.btn {
+    margin: 1rem;
+
+    background: transparent;
+    border: 2px solid rgba(255, 166, 0, 0.7);
+    border-radius: 5px;
+
+    color: rgba(255, 166, 0, 0.7);
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0, 0.7);
+    background: rgba(255, 166, 0, 0.7);
+}
+
+.sectionHeading {
+    padding: 4rem 0rem;
+    font-size: 6rem
+}
+
+#aboutDescriptionBody {
+	transform: skewY(-5deg);
+}
+
+#bg-text-container {
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: -1;
+}
+
+#aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+#Name {
+font-size: 8rem;
+}
+
+#aboutDescription{
+	max-width: 50%;
+}
+
+#myPic {
+    width: 19rem;
+    height: auto;
+    margin: 5rem 5rem;
+}
+
+.animate-text { 
+	white-space: nowrap;
+	animation: text-scrolling 10s linear infinite;
+}
+
+.animate-text span {
+	font-size: 28rem;
+	color: orange;
+    opacity: 30%;
+	line-height: 20rem;
+	font-weight: 800;
+}
+
+#left {
+	animation-direction: reverse;
+}
+
+#skillsBody {
+    display: flex;
+    flex-wrap: wrap;
+	
+    align-items: center;
+}
+
+.skillName {
+    margin-bottom: -1.8rem;
+    font-size: 1.3rem;
+}
+
+.skillName:hover {
+    font-weight: 600;
+}
+
+.progressBar{
+    width: 40rem;
+
+    margin: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+	border-radius: 0.5rem;
+
+    background: white;
+}
+
+.progress {
+    height: 0.7rem;
+
+    background: orange;
+}
+
+.blockquote {
+    padding: 10rem;
+
+    font-size: 7rem;
+}
+
+.blockquote-footer {
+    font-style: italic;
+    color: white;
+}
+
+#weatherInfo {
+    margin: 3rem;
+}
+
+#gamesContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+.gameCard {
+    width: 85%;
+    height: 30rem;
+
+    margin: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    border-radius: 1rem;
+
+    background: rgba(130, 75, 25, 0.3);
+    box-shadow: 0rem 1rem 8rem rgba(255, 125, 5, 0.15);
+}
+
+.gameCardImg {
+    width: 36rem;
+    height: 26rem;
+
+    box-shadow: 0rem 1rem 8rem rgba(255, 42, 0, 0.304);
+
+    border-radius: 1rem;
+    
+    transform: translate(-2rem, 0rem);
+
+    object-fit: none;
+}
+
+.gameTitle {
+    font-size: 4rem;
+}
+
+.gameDescription {
+    width: 50rem;
+    margin: 0.5rem;
+
+    letter-spacing: 0.1rem;
+    text-align: justify;
+}
+
+#contactCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contactCard {
+    width: 40rem;
+    height: 25rem;
+
+    margin: 3rem;
+
+    border-top: 0.1rem solid grey;
+    border-left: 0.1rem solid grey;
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 1rem;
+
+    backdrop-filter: blur(0.9rem);
+    box-shadow: 0.2rem 0.2rem 1rem rgb(196, 133, 16, 0.5);
+}
+
+.content {
+    margin: 3rem;
+}
+
+.contactIcons {
+    width: 8rem;
+    height: 8rem;
+}
+
+#mailhover:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#whatsapphover:hover {
+    background: rgba(35, 255, 0, 0.2);
+}
+
+#githubhover:hover {
+    background: rgba(30, 35, 140, 0.2);
+}
+
+#weatherForm, #mailForm {
+    visibility: hidden;
+
+    width: 50rem;
+    min-height: auto;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+
+    margin: 1px;
+
+    border-radius: 1rem;
+    border-top: 0.1rem solid grey;
+    border-left: 0.1rem solid grey;
+
+    box-shadow: 0.2rem 0.2rem 1rem rgb(196, 133, 16, 0.5);
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5rem);
+}
+
+.popUpTitle {
+    margin: 2rem;
+    font-size: 4rem;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 5rem;
+
+    transform: rotate(45deg);
+
+    border: 0px;
+    background: transparent;
+    color: white;
+
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    color: orange;
+}
+
+.inputFields {
+    width: 40rem;
+    min-height: 4rem;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(255, 255, 255, 0.4);
+
+    background: rgba(255, 166, 0, 0.5);
+
+    text-align: left;
+
+    color: white;
+}
+
+.inputFields:hover {
+    background: rgba(255, 196, 87, 0.5);
+}
+
+::placeholder {
+    color: white;
+}
+
+#senderMessage {
+    height: 20rem;
+}
+
+.g-recaptcha {
+    margin: 1rem;
+
+    overflow: hidden;
+
+    position: relative;
+    left: 10%;
+}
+
+@media (max-width: 1400px) {
+    .gameCard {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 45rem;
+        height: 52rem;
+    }
+
+    .gameCardImg {
+        transform: translate(0rem, -3.5rem);
+    }
+
+    .gameTitle {
+        font-size: 3rem;
+    }
+    
+    .gameDescription, .gameCardInfo a.btn {
+        font-size: 1.3rem;
+    }
+    
+    .gameDescription {
+        width: 42rem;
+
+        letter-spacing: 0.05rem;
+    }
+
+    .gameCardInfo a.btn {
+        margin: 0.5rem;
+
+    }
+}
+
+.leaflet-control-zoom-in span, .leaflet-control-zoom-out span {
+    color: black;
+}
+
+#weatherLoadGIF, #mailLoadGIF {
+    width: 3rem;
+    visibility: hidden;
+}
+
+@media (max-width: 1100px) {
+    #typed {
+        font-size: 6rem;
+    }
+
+    .btn, #aboutDescription{
+        font-size: 1.7rem;
+    }
+
+    .sectionHeading {
+        padding: 3rem 0rem;
+
+        font-size: 4.5rem;
+    }
+
+    #Name {
+        font-size: 6rem;
+    }
+
+    #myPic {
+        width: 15rem;
+
+        margin: 3rem 3rem;
+    }
+
+    .progressBar {
+        width: 32rem;
+    }
+
+    .progress {
+        height: 0.6rem;
+    }
+
+    .blockquote {
+        padding: 8rem;
+
+        font-size: 4rem;
+    }
+
+    .content {
+        font-size: 1.5rem;
+    }
+
+    .contactCard {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .contactIcons {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #typed {
+        font-size: 5rem;
+    }
+
+    .btn {
+        font-size: 1.7rem;
+    }
+
+    .sectionHeading {
+        padding: 2rem 0rem;
+
+        font-size: 3.5rem;
+    }
+
+    #Name {
+        font-size: 4.5rem;
+    }
+
+    #aboutDescription {
+        font-size: 1.4rem;
+    }
+
+    #myPic {
+        width: 12rem;
+
+        margin: 2rem 2rem;
+    }
+
+    .progressBar {
+        width: 30rem;
+    }
+
+    .progress {
+        height: 0.5rem;
+    }
+
+    .blockquote {
+        padding: 6rem;
+
+        font-size: 3.7rem;
+    }
+
+    .gameCard {
+        width: 35rem;
+        height: 45rem;
+    }
+
+    .gameCardImg {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .gameCardImg {
+        transform: translateY(-2.5rem);
+    }
+
+    .gameTitle {
+        font-size: 2.5rem;
+    }
+
+    .gameDescription {
+        font-size: 1.2rem;
+        width: 30rem;
+    }
+
+    #weatherForm, #mailForm {
+        width: 45rem;
+    }
+
+    .popUpTitle {
+        margin: 1.5rem;
+
+        font-size: 3rem;
+    }
+
+    .closeBtn {
+        top: -0.9rem;
+        right: 1rem;
+    }
+
+    .inputFields {
+        width: 35rem;
+
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #typed {
+        font-size: 3rem;
+    }
+
+    .btn{
+        font-size: 1.5rem;
+    }
+
+    .blockquote {
+        padding: 3rem;
+        font-size: 2.7rem;
+    }
+
+    .gameCard {
+        width: 32rem;
+        height: 42rem;
+    }
+
+    .gameCardImg {
+        width: 29rem;
+        height: 19rem;
+    }
+
+    .gameCardImg img {
+        transform: translateY(-2.5rem);
+    }
+
+    .gameTitle {
+        font-size: 2rem;
+    }
+
+    .gameDescription {
+        font-size: 1.1rem;
+        width: 27rem;
+    }
+
+    .gameCardInfo a.btn {
+        margin: 1rem;
+        font-size: 1.3rem;
+    }
+
+    #weatherForm, #mailForm {
+        width: 37rem;
+    }
+
+    .popUpTitle {
+        margin: 1.2rem;
+
+        font-size: 2.5rem;
+    }
+
+    .closeBtn {
+        top: -0.9rem;
+        right: 1rem;
+    }
+
+    .inputFields {
+        width: 30rem;
+
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #typed {
+        font-size: 2.95rem;
+    }
+
+    .btn{
+        font-size: 1.3rem;
+    }
+
+    .blockquote {
+        padding: 3rem;
+        font-size: 2.55rem;
+    }
+
+    .gameCard {
+        width: 31rem;
+        height: 41rem;
+    }
+
+    .gameCardImg {
+        width: 28rem;
+        height: 18rem;
+    }
+
+    .gameCardImg img {
+        transform: translateY(-2.5rem);
+    }
+
+    .gameTitle {
+        font-size: 1.95rem;
+    }
+
+    .gameDescription {
+        font-size: 1.05rem;
+        width: 26rem;
+    }
+
+    .gameCardInfo a.btn {
+        margin: 1rem;
+        font-size: 1.25rem;
+    }
+
+    #weatherForm, #mailForm {
+        width: 30rem;
+    }
+
+    .popUpTitle {
+        margin: 1.15rem;
+
+        font-size: 2.4rem;
+    }
+
+    .closeBtn {
+        top: -0.9rem;
+        right: 1rem;
+    }
+
+    .inputFields {
+        width: 24rem;
+        height: 1rem;
+        font-size: 1.15rem;
+    }
+
+    .g-recaptcha {
+        left: 0%;
+    }
+}
+
+@keyframes text-scrolling {
+	0% {transform: translate3d(-100%, 0, 0);}
+	33% {transform: translate3d(-44%, 0, 0);}
+	66% {transform: translate3d(44%, 0, 0);}
+	100% {transform: translate3d(100%, 0, 0);}
+}

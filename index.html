@@ -1,0 +1,235 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mustafa AmanUllah</title>
+
+    <script src="components/js/jQuery.js"></script>
+
+    <link rel="stylesheet" href="components/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="components/css/otherStyling.css">
+    <link rel="stylesheet" href="components/css/styling.css">
+</head>
+
+<body style="background: black;">
+
+    <!-- section 1 -->
+
+    <div id="main" class="sections" style="background: fixed url('images/bg/bg1.jpg');">
+        <div class="particlesSection">
+            <div class="container">
+                <nav class="navbar navbar-expand-md">
+                    <a href="#main" class="navbar-brand">MyP<i>O</i>RTF<i>O</i>LI<i>O</i></a>
+                    <button class="navbar-toggler" style="width: auto; height: 50px;" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <img class="navbar-toggler-icon" src="images/icons/toggler-icon.png" alt=""
+                            style="height: 15px;">
+                    </button>
+                    <div class="navbar-collapse collapse" id="toggleMobileMenu">
+                        <ul class="navbar-nav">
+                            <li><a class="nav-link" href="#about">AB<i>O</i>UT</a></li>
+                            <li><a class="nav-link" href="#projects">PR<i>O</i>JECTS</a></li>
+                            <li><a class="nav-link" href="#games">GAMES</a></li>
+                            <li><a class="nav-link" href="#contact">C<i>O</i>NTACT</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <p id="typed"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 2 -->
+
+    <div id="about" class="sections" style="background: fixed url('images/bg/bg2.jpg');">
+        <div class="container">
+            <p data-aos="fade-up" class="sectionHeading">AB<i>O</i>UT</p>
+            <div id="aboutDescriptionBody">
+                <div id="bg-text-container">
+                    <div class="animate-text">
+                        <span>FRONT-END</span>
+                        <span>FRONT-END</span>
+                    </div>
+                    <div id="left" class="animate-text">
+                        <span>WEB DEVELOPER</span>
+                        <span>WEB DEVELOPER</span>
+                    </div>
+                </div>
+                <p data-aos="fade-up" id="Name">Mustafa AmanUllah</p>
+                <div id="aboutContainer">
+                    <p data-aos="fade-up" id="aboutDescription" style="margin: 0rem 5rem">I'm a certified Front-End Web
+                        Developer, pursuing a Bachelors of Science degree in Software Engineering. I'm also learning
+                        Back-End technology in MEAN-Stack Web Development to become a Full-Stack Web Developer.</p>
+                    <img src="images/myPic.jpg" alt="myPIC" id="myPic">
+                </div>
+            </div>
+            <div id="skillsBody">
+                <div data-aos="fade-up-right">
+                    <p class="skillName">HTML</p>
+                    <div class="progressBar">
+                        <span class="progress" style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left">
+                    <p class="skillName">CSS</p>
+                    <div class="progressBar">
+                        <span class="progress" style="width: 75%;"></span>
+                    </div>
+                </div>
+                <div data-aos="fade-up-right">
+                    <p class="skillName">Bootstrap</p>
+                    <div class="progressBar">
+                        <span class="progress" style="width: 85%;"></span>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left">
+                    <p class="skillName">JavaScript</p>
+                    <div class="progressBar">
+                        <span class="progress" style="width: 70%;"></span>
+                    </div>
+                </div>
+                <div data-aos="fade-up">
+                    <p class="skillName">jQuery</p>
+                    <div class="progressBar">
+                        <span class="progress" style="width: 80%;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 3 -->
+
+    <div id="projects" class="sections" style="background: fixed url('images/bg/bg3.jpg');">
+        <div class="particlesSection">
+            <div class="container">
+                <p data-aos="fade-up" class="sectionHeading">PR<i>O</i>JECTS</p>
+                <div id="projectText"></div><br><br><br><br><br><br><b></b>
+                <blockquote class="blockquote">
+                    <p>“It doesn't matter how slowly you go as long as you don't give up.”</p>
+                    <footer class="blockquote-footer">Confucius</footer>
+                </blockquote>
+                <button type="button" id="weatherBtn" class="btn">CHECK WEATHER</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 3 > weather -->
+
+    <div id="weatherForm">
+        <p class="popUpTitle">WEATHER CHECK</p>
+        <button class="closeBtn">+</button>
+        <input type="text" id="cityInput" class="inputFields" placeholder="Enter City Name" required>
+        <br>
+        <button type="button" id="weatherFormSubmit" class="btn">CHECK</button><br>
+        <img id="weatherLoadGIF" src="images/icons/loader.gif">
+        <div id="weatherInfo">
+            <p id="cityName">City: -</p>
+            <p id="cityTemp">Temperature: -</p>
+            <p id="cityTempDesc">Description: -</p>
+        </div>
+    </div>
+
+    <!-- section 4 -->
+
+    <div id="games" class="sections" style="background: fixed url('images/bg/bg4.jpg');">
+        <div class="container">
+            <p data-aos="fade-up" class="sectionHeading">GAMES</p>
+            <div id="gamesContainer">
+                <div data-aos="fade-up" class="gameCard">
+                    <img class="gameCardImg"
+                        src="https://play-lh.googleusercontent.com/ficwmgoH212H1yR7_d4tswB8lv_TOFcWjLv9txhgP5yrP53iKywh-Z_Yk-z2XC0Jvg"
+                        alt="Snake Xenzia Pic">
+                    <div class="gameCardInfo">
+                        <p class="gameTitle">Snake Xenzia</p>
+                        <p class="gameDescription">The player controls a long, thin creature, resembling a snake, which
+                            roams around on a bordered plane, picking up food (or some other item), trying to avoid
+                            hitting its own tail or the edges of the playing area. Each time the snake eats a piece of
+                            food, its tail grows longer, making the game increasingly difficult.</p>
+                        <button class="btn playBtn">PLAY NOW</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="gameCard">
+                    <img class="gameCardImg"
+                        src="https://archive.org/download/tower-bloxx-deluxe-3-d-2.0.35/maxresdefault.jpg"
+                        alt="Snake Xenzia Pic">
+                    <div class="gameCardInfo">
+                        <p class="gameTitle">Tower Blocks</p>
+                        <p class="gameDescription">Players take turns removing one block at a time from a tower
+                            constructed of 54 blocks. Each block removed is then placed on top of the tower, creating a
+                            progressively more unstable structure.</p>
+                        <button class="btn playBtn">PLAY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 5 -->
+    <div id="contact" class="sections" style="background: fixed url('images/bg/bg1.jpg');">
+        <div class="container">
+            <p data-aos="fade-up" class="sectionHeading">C<i>O</i>NTACT</p>
+            <div id="contactCardsContainer">
+                <div id="mailhover" class="contactCard" data-tilt>
+                    <div class="content">
+                        <img src="images/icons/mail-icon.png" alt="mail-icon" class="contactIcons">
+                        <br><br>
+                        <button type="button" id="mailBtn" class="btn">MAIL</button>
+                    </div>
+                </div>
+                <div id="whatsapphover" class="contactCard" data-tilt>
+                    <div class="content">
+                        <img src="images/icons/whatsapp-icon.png" alt="whatsapp-icon" class="contactIcons">
+                        <br><br>
+                        <a href="https://wa.me/+923246500736" class="btn" target=”_blank”>CHAT</a>
+                    </div>
+                </div>
+                <div id="githubhover" class="contactCard" data-tilt>
+                    <div class="content">
+                        <img src="images/icons/github-icon.png" alt="github-icon" class="contactIcons">
+                        <br><br>
+                        <a href="https://github.com/mustafaxyz" class="btn" target=”_blank”>VISIT</a>
+                    </div>
+                </div>
+                <div id="map" class="contactCard" data-tilt></div>
+            </div>
+        </div>
+    </div>
+    <form id="mailForm" onsubmit="return false;">
+        <p class="popUpTitle">MAILING F<i>O</i>RM</p>
+        <button class="closeBtn">+</button>
+        <input id="senderName" class="inputFields" type="text" required placeholder="Name"><br>
+        <input id="senderOrg" class="inputFields" type="text" placeholder="Organization (If Any)"><br>
+        <input id="senderEmail" class="inputFields" type="email" required placeholder="Email"><br>
+        <textarea id="senderMessage" class="inputFields" type="text" required
+            placeholder="Write your message here..."></textarea><br>
+        <div class="g-recaptcha" data-sitekey="6Lchx0UgAAAAANuLE4TfNVa9DlwiQNApEFnnhhS2"></div>
+        <button type="submit" id="mailFormSubmit" class="btn">SEND</button><img id="mailLoadGIF"
+            src="images/icons/loader.gif">
+    </form>
+
+    <!-- libraries and their configs -->
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="components/js/libraries/particles.js"></script>
+    <script src="components/js/libraries/typed.js"></script>
+    <script src="components/js/libraries/aos.js"></script>
+    <script src="components/js/libraries/blotter.js"></script>
+    <script src="components/js/libraries/vanilla-tilt.js"></script>
+    <script src="components/js/libraries/email.js"></script>
+    <script src="components/js/libraries/toastr.js"></script>
+    <script src="components/js/libraries/sweetAlert2.js"></script>
+    <script src="components/js/libraries/leaflet.js"></script>
+
+    <!-- bootstrap and JS -->
+
+    <script src="components/js/bootstrap.min.js"></script>
+    <script src="components/js/JavaScript.js"></script>
+</body>
+
+</html>
